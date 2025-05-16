@@ -1,5 +1,9 @@
-import { useLocation } from "react-router-dom";
+
+import React from "react";
+import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const NotFound = () => {
   const location = useLocation();
@@ -12,14 +16,24 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
-          Return to Home
-        </a>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <div className="flex-grow flex items-center justify-center bg-gray-50 py-24">
+        <div className="text-center px-6">
+          <h1 className="text-5xl md:text-6xl font-serif text-ambiance-primary mb-6">404</h1>
+          <p className="text-2xl text-ambiance-dark mb-8">Oops! The page you're looking for doesn't exist</p>
+          <p className="text-gray-600 mb-10 max-w-lg mx-auto">
+            We can't seem to find the page you're looking for. It might have been removed, had its name changed, or is temporarily unavailable.
+          </p>
+          <Link 
+            to="/" 
+            className="btn-primary"
+          >
+            Return to Home
+          </Link>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };
