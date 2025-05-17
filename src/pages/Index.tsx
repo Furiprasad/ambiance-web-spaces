@@ -27,6 +27,15 @@ const Index = () => {
           // Reset to top when reaching bottom
           if (currentPosition >= maxScroll) {
             currentPosition = 0;
+            // Smooth transition back to top
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+            // Brief pause before continuing scroll
+            return setTimeout(() => {
+              currentPosition = 0;
+            }, 1000);
           }
           
           window.scrollTo(0, currentPosition);

@@ -43,11 +43,13 @@ const ProjectsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project) => (
             <div key={project.id} className="project-card group">
-              <img 
-                src={project.image} 
-                alt={project.title} 
-                className="w-full h-80 object-cover rounded-lg"
-              />
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-lg">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
               <div className="project-overlay rounded-lg">
                 <h3 className="text-xl md:text-2xl font-serif text-white mb-2">{project.title}</h3>
                 <p className="text-ambiance-cream/80 mb-4">{project.category}</p>
