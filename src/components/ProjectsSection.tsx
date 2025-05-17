@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 const projects = [
   {
     id: 1,
-    title: 'Modern Living Room',
-    image: '/lovable-uploads/98cdca6d-04a1-4bcc-98b1-4194a2ccc64b.png',
+    title: 'MK Gold Coast',
+    image: '/lovable-uploads/a60ba276-0f3e-40d5-97cc-6365f3625026.png',
     category: 'Residential'
   },
   {
     id: 2,
-    title: 'Contemporary Kitchen',
-    image: '/lovable-uploads/4a86e88b-1a33-4448-8899-0ca7de0ed24c.png',
+    title: 'Vaisakhi Skyline',
+    image: '/lovable-uploads/7f4d99e5-a36b-48ab-ae99-cdbd8a542b97.png',
     category: 'Residential'
   },
   {
