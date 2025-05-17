@@ -5,27 +5,27 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: 'Priya Singh',
+    name: 'Priya Chaganti',
     quote: 'Ambiance Interiors transformed our house into a stunning home. The attention to detail and understanding of our style was beyond our expectations.',
     location: 'Villa Project, Hyderabad'
   },
   {
     id: 2,
-    name: 'Rajiv Mehta',
+    name: 'Rajiv Kumar',
     quote: 'Working with J. Phani Saradhi was a pleasure. His team created a perfect balance of luxury and comfort in our new apartment.',
-    location: 'Apartment Redesign, Bangalore'
+    location: 'Apartment Redesign, Vizag'
   },
   {
     id: 3,
-    name: 'Anjali Patel',
+    name: 'Suresh Maddineni',
     quote: 'The team at Ambiance Interiors has an incredible eye for design. They made our office space both functional and beautiful.',
-    location: 'Commercial Project, Mumbai'
+    location: 'Commercial Project, Vizag'
   },
   {
     id: 4,
     name: 'Vikram Reddy',
     quote: 'Our kitchen renovation exceeded all expectations. The team was professional, creative, and delivered on time and within budget.',
-    location: 'Home Renovation, Chennai'
+    location: 'Home Renovation, Rajahmundry'
   }
 ];
 
