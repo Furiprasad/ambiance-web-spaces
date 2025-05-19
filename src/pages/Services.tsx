@@ -1,10 +1,9 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import ResidentialSection from '@/components/services/ResidentialSection';
-import CommercialSection from '@/components/services/CommercialSection';
-import { ScrollArea } from '@/components/ui/scroll-area';
+import { Card, CardContent } from "@/components/ui/card";
 
 const Services = () => {
   return (
@@ -14,10 +13,51 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-serif text-center mb-12">Our Services</h1>
           
-          <ScrollArea className="h-full w-full">
-            <ResidentialSection />
-            <CommercialSection />
-          </ScrollArea>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-0 relative">
+                <img 
+                  src="/lovable-uploads/e4ab59e4-70a7-45f3-b98f-2c5c91ec0dbd.png" 
+                  alt="Residential Interior Design" 
+                  className="w-full h-[300px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 flex flex-col justify-end p-6">
+                  <h2 className="text-2xl font-serif text-white mb-2">Residential Interiors</h2>
+                  <p className="text-white/90 mb-4">
+                    Transform your house into a personalized sanctuary that reflects your unique style and enhances your quality of life.
+                  </p>
+                  <Link 
+                    to="/services/residential" 
+                    className="inline-block bg-white text-gray-900 px-4 py-2 rounded hover:bg-gray-100 transition-colors"
+                  >
+                    Explore Residential
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <CardContent className="p-0 relative">
+                <img 
+                  src="/lovable-uploads/ed9ea4ec-c8f6-408f-aa87-4769f697c616.png" 
+                  alt="Commercial Interior Design" 
+                  className="w-full h-[300px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 flex flex-col justify-end p-6">
+                  <h2 className="text-2xl font-serif text-white mb-2">Commercial Interiors</h2>
+                  <p className="text-white/90 mb-4">
+                    Create functional and inspiring spaces that enhance productivity, reflect your brand identity, and impress clients.
+                  </p>
+                  <Link 
+                    to="/services/commercial" 
+                    className="inline-block bg-white text-gray-900 px-4 py-2 rounded hover:bg-gray-100 transition-colors"
+                  >
+                    Explore Commercial
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
       <Footer />

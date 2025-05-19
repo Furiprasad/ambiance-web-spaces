@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import ResidentialServices from "./pages/ResidentialServices";
+import CommercialServices from "./pages/CommercialServices";
 import OurProjects from "./pages/OurProjects";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/residential" element={<ResidentialServices />} />
+          <Route path="/services/commercial" element={<CommercialServices />} />
           <Route path="/our-projects" element={<OurProjects />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
