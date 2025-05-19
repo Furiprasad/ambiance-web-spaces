@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,19 +7,17 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 import { Image } from "lucide-react";
 
 const ResidentialServices = () => {
-  const residentialImages = [
-    '/lovable-uploads/dc8c6599-84d1-4323-ac62-3bbaa229a0e4.png',
-    '/lovable-uploads/a5a999f2-1c33-4875-af4d-2c40277496ee.png',
-  ];
-
+  // Images for the page
+  const heroImage = '/lovable-uploads/c1d5114c-4d29-42ff-beb2-a01dfbbda762.png';
+  
   const galleryImages = [
-    '/lovable-uploads/ffb00cbb-31b5-4aab-bede-6803a5163572.png',
-    '/lovable-uploads/74919d16-eff8-42dd-80b3-d9a434f16222.png',
-    '/lovable-uploads/3a51b26d-d475-44e0-b20f-c9efaf18f062.png',
+    '/lovable-uploads/9d9d135a-46de-45f2-a56e-475fb2ea549d.png',
+    '/lovable-uploads/b537fe42-5df9-4844-a6a8-8107f61f8dc1.png',
+    '/lovable-uploads/815b0289-c0cd-4126-ab28-0729a80552ac.png',
   ];
 
-  const [lightboxOpen, setLightboxOpen] = React.useState(false);
-  const [selectedImage, setSelectedImage] = React.useState('');
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
 
   const openLightbox = (image) => {
     setSelectedImage(image);
@@ -35,49 +33,47 @@ const ResidentialServices = () => {
       <Header />
       <div className="pt-24 pb-16 bg-ambiance-light">
         <div className="container mx-auto px-4">
-          {/* Hero Section */}
-          <div className="relative mb-16">
-            <Carousel className="w-full">
-              <CarouselContent>
-                {residentialImages.map((img, index) => (
-                  <CarouselItem key={index}>
-                    <div className="relative h-[400px] md:h-[500px] w-full">
-                      <img 
-                        src={img} 
-                        alt={`Residential Interior ${index + 1}`} 
-                        className="w-full h-full object-cover rounded-lg"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 rounded-lg"></div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
-            
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 w-5/6 md:w-3/4">
-              <h1 className="text-3xl md:text-5xl font-serif mb-4">
-                Crafting Comfort & Elegance: Residential Interiors that Reflect You
-              </h1>
-              <p className="text-lg md:text-xl">
-                Bespoke interior design that turns houses into cherished homes.
-              </p>
+          {/* Hero Section with Parallax Effect */}
+          <div className="relative mb-16 overflow-hidden rounded-lg">
+            <div className="h-[500px] relative">
+              <div 
+                className="absolute inset-0 bg-center bg-cover transform transition-transform duration-7000 hover:scale-105"
+                style={{ 
+                  backgroundImage: `url(${heroImage})`,
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover'
+                }}
+              ></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70 rounded-lg"></div>
+              
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 w-5/6 md:w-3/4">
+                <h1 className="text-3xl md:text-5xl font-serif mb-4">
+                  Crafting Comfort & Elegance: Residential Interiors that Reflect You
+                </h1>
+                <p className="text-lg md:text-xl">
+                  Bespoke interior design that turns houses into cherished homes.
+                </p>
+              </div>
             </div>
           </div>
 
           {/* Two-Column Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Left Column - Gallery */}
+            {/* Left Column - Gallery with Masonry Effect */}
             <div className="grid grid-cols-1 gap-4 h-fit">
               {galleryImages.map((img, index) => (
                 <Card key={index} className="overflow-hidden cursor-pointer" onClick={() => openLightbox(img)}>
                   <CardContent className="p-0 relative group">
                     <img 
                       src={img} 
-                      alt={`Residential Gallery ${index + 1}`} 
+                      alt={`Residential Interior ${index + 1}`} 
                       className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                       <Image className="w-8 h-8 text-white" />
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 bg-black/50 p-2 transform translate-y-full group-hover:translate-y-0 transition-transform">
+                      <p className="text-white text-sm">Explore this design</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -89,11 +85,14 @@ const ResidentialServices = () => {
               <div>
                 <h3 className="text-2xl font-serif mb-3">The Importance of Residential Interior Design</h3>
                 <p className="text-gray-700">
-                  Your home is more than a shelter — it's your retreat, your story, and a reflection 
-                  of the life you've built. Exceptional residential interior design transforms a structure into 
-                  an experience — warm, tailored, and intimately yours. It's not just about aesthetics; 
-                  it's about shaping a lifestyle. Every design choice — from the curve of a chair to the texture 
-                  of a curtain — should create harmony between how you live and how you want to feel.
+                  Your home is more than a place—it's a living narrative of who you are. A sanctuary. A memory bank. 
+                  A backdrop for life's most meaningful moments. Residential interior design is the art of translating 
+                  lifestyle into space; it's where form meets emotion and function aligns with personal expression.
+                </p>
+                <p className="text-gray-700 mt-2">
+                  From cozy apartments to sprawling estates, effective interior design doesn't just decorate a space—it 
+                  transforms it. When done with thoughtfulness and skill, it enhances the daily living experience in profound 
+                  and lasting ways.
                 </p>
               </div>
 
@@ -103,42 +102,47 @@ const ResidentialServices = () => {
                   <li>
                     <h4 className="font-medium">Enhances Functionality</h4>
                     <p className="text-gray-700">
-                      Great design begins with intention. A thoughtfully curated layout ensures that every 
-                      square foot serves a purpose. Whether it's maximizing storage in a small urban apartment 
-                      or optimizing light flow in an open-concept home, form meets function seamlessly to create 
-                      effortless living.
+                      In great residential design, every square foot serves a purpose. We craft layouts that eliminate wasted space 
+                      and maximize flow—from entryways that feel welcoming to kitchens that invite conversation. Smart design solutions 
+                      like concealed storage, integrated lighting, and flexible furniture allow your home to grow and adapt with you. 
+                      Whether it's creating a multifunctional reading nook or reconfiguring your living room to capture more natural light, 
+                      the right design elevates how you live.
                     </p>
                   </li>
                   <li>
-                    <h4 className="font-medium">Increases Value</h4>
+                    <h4 className="font-medium">Increases Property Value</h4>
                     <p className="text-gray-700">
-                      A well-designed home doesn't just look good — it performs better on the market. 
-                      High-end finishes, intuitive floorplans, and cohesive styling can significantly 
-                      boost property value, making good design a smart long-term investment.
+                      A beautifully designed home doesn't just appeal emotionally—it performs financially. Strategic interior design can 
+                      significantly increase a property's market value and desirability. From premium finishes to custom cabinetry and built-in 
+                      technologies, high-quality design choices yield long-term returns. Potential buyers and appraisers alike respond to 
+                      well-composed, move-in-ready homes that showcase thoughtful aesthetics and craftsmanship.
                     </p>
                   </li>
                   <li>
-                    <h4 className="font-medium">Reflects Identity</h4>
+                    <h4 className="font-medium">Reflects Your Identity</h4>
                     <p className="text-gray-700">
-                      Your space should tell your story. From bespoke furniture and curated artwork to 
-                      color palettes that mirror your personality, residential design becomes a personal 
-                      signature. It's a narrative woven into every surface and space.
+                      Your home should tell your story—not a trend. Every material, color, and texture in your space can communicate something 
+                      about you—your tastes, values, travels, and inspirations. We believe residential interiors should resonate on a deeply 
+                      personal level. Whether it's an heirloom piece reimagined in a modern setting or a color palette inspired by your favorite 
+                      landscape, we help bring your personal narrative to life through design.
                     </p>
                   </li>
                   <li>
-                    <h4 className="font-medium">Improves Well-being</h4>
+                    <h4 className="font-medium">Improves Well-Being</h4>
                     <p className="text-gray-700">
-                      Interior design has a profound impact on how we feel. Calming textures, natural light, 
-                      ambient tones, and breathable layouts contribute to mental clarity, reduced stress, and 
-                      physical comfort. A well-balanced home uplifts your mood and supports your lifestyle.
+                      Design impacts how you feel. Studies continue to show that a well-designed home enhances mental clarity, emotional balance, 
+                      and even physical health. Natural light, biophilic elements, air-purifying materials, and cozy textures all contribute to a 
+                      home that supports wellness. Our approach emphasizes environments that soothe the senses and support your daily rhythms—from 
+                      stress-free morning routines to restful evenings.
                     </p>
                   </li>
                   <li>
                     <h4 className="font-medium">Creates Lasting Impressions</h4>
                     <p className="text-gray-700">
-                      Whether you're entertaining guests or enjoying quiet moments alone, your home speaks volumes. 
-                      A beautifully designed space not only creates a sense of pride but also leaves a lasting 
-                      impression on everyone who enters — offering both beauty and hospitality.
+                      Your home is often a reflection of first impressions—on guests, family, and even yourself. Whether you're entertaining or 
+                      enjoying solitude, a beautifully curated space elevates every moment. It's the details that matter: the unexpected art piece 
+                      in the hallway, the way the lighting dances across polished stone, or how seamlessly the indoors connect with outdoor spaces. 
+                      These choices not only enhance the look of your home—they make it unforgettable.
                     </p>
                   </li>
                 </ul>
