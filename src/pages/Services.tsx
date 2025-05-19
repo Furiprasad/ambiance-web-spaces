@@ -17,7 +17,7 @@ const Services = () => {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-0 relative">
                 <img 
-                  src="/lovable-uploads/e4ab59e4-70a7-45f3-b98f-2c5c91ec0dbd.png" 
+                  src="/lovable-uploads/dc8c6599-84d1-4323-ac62-3bbaa229a0e4.png" 
                   alt="Residential Interior Design" 
                   className="w-full h-[300px] object-cover"
                 />
@@ -39,7 +39,7 @@ const Services = () => {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-0 relative">
                 <img 
-                  src="/lovable-uploads/ed9ea4ec-c8f6-408f-aa87-4769f697c616.png" 
+                  src="/lovable-uploads/74919d16-eff8-42dd-80b3-d9a434f16222.png" 
                   alt="Commercial Interior Design" 
                   className="w-full h-[300px] object-cover"
                 />
