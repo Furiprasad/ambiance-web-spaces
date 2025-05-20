@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Column 1: Logo + Description */}
           <div className="flex flex-col items-center md:items-start">
             <img 
-              src="/lovable-uploads/16281be2-ef81-471a-8666-027e80655eb3.png" 
+              src="/lovable-uploads/eedb3746-32fb-4717-9a6a-d8c88427d608.png" 
               alt="Ambiance Interiors Logo" 
               className="h-16 mb-4"
             />
