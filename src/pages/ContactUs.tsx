@@ -1,58 +1,21 @@
 
 import React from 'react';
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Phone, Mail, User } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Button } from '@/components/ui/button';
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-
-const formSchema = z.object({
-  fullName: z.string().min(2, {
-    message: "Full name must be at least 2 characters.",
-  }),
-  email: z.string().email({
-    message: "Please enter a valid email address.",
-  }),
-  phone: z.string().optional(),
-  subject: z.string().optional(),
-  message: z.string().min(10, {
-    message: "Message must be at least 10 characters.",
-  }),
-});
-
-type FormValues = z.infer<typeof formSchema>;
 
 const ContactUs = () => {
-  const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      fullName: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    },
-  });
-
-  const onSubmit = (data: FormValues) => {
-    console.log(data);
-    // Here you would normally send the form data to your backend
-    // For now, we'll just log it to the console
-    alert("Message sent successfully!");
-    form.reset();
-  };
+  // Safely load the fillout script after component mount
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://server.fillout.com/embed/v1/";
+    script.async = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -99,100 +62,18 @@ const ContactUs = () => {
                 </div>
               </div>
               
-              {/* Contact Form Section */}
+              {/* Embedded Form Section */}
               <div className="p-8">
                 <h2 className="text-2xl font-serif mb-6 text-center">Get in Touch</h2>
                 
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <FormField
-                        control={form.control}
-                        name="fullName"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Full Name*</FormLabel>
-                            <FormControl>
-                              <Input placeholder="John Doe" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      
-                      <FormField
-                        control={form.control}
-                        name="email"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Email Address*</FormLabel>
-                            <FormControl>
-                              <Input type="email" placeholder="your@email.com" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                      <FormField
-                        control={form.control}
-                        name="phone"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Phone Number (optional)</FormLabel>
-                            <FormControl>
-                              <Input placeholder="+1 234 567 8900" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      
-                      <FormField
-                        control={form.control}
-                        name="subject"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel>Subject (optional)</FormLabel>
-                            <FormControl>
-                              <Input placeholder="How can we help you?" {...field} />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
-                    
-                    <FormField
-                      control={form.control}
-                      name="message"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Message*</FormLabel>
-                          <FormControl>
-                            <Textarea 
-                              placeholder="Please tell us more about your project or inquiry..." 
-                              className="min-h-[150px]" 
-                              {...field} 
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    
-                    <div className="flex justify-center mt-8">
-                      <Button 
-                        type="submit"
-                        className="bg-ambiance-primary hover:bg-ambiance-primary/90 text-white px-8 py-6 h-auto text-lg"
-                      >
-                        Send Message
-                      </Button>
-                    </div>
-                  </form>
-                </Form>
+                {/* Fillout Form Embed */}
+                <div 
+                  style={{width:"100%", height:"500px"}} 
+                  data-fillout-id="6bChDgUuBuus" 
+                  data-fillout-embed-type="standard" 
+                  data-fillout-inherit-parameters 
+                  data-fillout-dynamic-resize
+                ></div>
               </div>
             </div>
           </div>
