@@ -1,16 +1,17 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 
 const projects = [
   {
-    id: 1,
+    id: 'mk-gold-coast',
     title: 'MK Gold Coast',
     image: '/lovable-uploads/a60ba276-0f3e-40d5-97cc-6365f3625026.png',
     category: 'Residential'
   },
   {
-    id: 2,
+    id: 'vaisakhi-skyline',
     title: 'Vaisakhi Skyline',
     image: '/lovable-uploads/7f4d99e5-a36b-48ab-ae99-cdbd8a542b97.png',
     category: 'Residential'
@@ -53,12 +54,21 @@ const ProjectsSection = () => {
               <div className="project-overlay rounded-lg">
                 <h3 className="text-xl md:text-2xl font-serif text-white mb-2">{project.title}</h3>
                 <p className="text-ambiance-cream/80 mb-4">{project.category}</p>
-                <Link 
-                  to="/our-projects" 
-                  className="px-6 py-2 border border-white text-white rounded hover:bg-white hover:text-ambiance-dark transition duration-300"
-                >
-                  Know More
-                </Link>
+                {typeof project.id === 'string' ? (
+                  <Link 
+                    to={`/our-projects/${project.id}`}
+                    className="px-6 py-2 border border-white text-white rounded hover:bg-white hover:text-ambiance-dark transition duration-300"
+                  >
+                    View Project
+                  </Link>
+                ) : (
+                  <Link 
+                    to="/our-projects" 
+                    className="px-6 py-2 border border-white text-white rounded hover:bg-white hover:text-ambiance-dark transition duration-300"
+                  >
+                    Know More
+                  </Link>
+                )}
               </div>
             </div>
           ))}
