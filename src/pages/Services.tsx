@@ -39,7 +39,7 @@ const Services = () => {
             <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-0 relative">
                 <img 
-                  src="/lovable-uploads/74919d16-eff8-42dd-80b3-d9a434f16222.png" 
+                  src="/lovable-uploads/0dc0e953-d493-4d15-b9e7-40925ba66f3b.png" 
                   alt="Commercial Interior Design" 
                   className="w-full h-[300px] object-cover"
                 />

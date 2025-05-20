@@ -84,6 +84,9 @@ const ResidentialServices = () => {
               <div>
                 <h3 className="text-2xl font-serif mb-3">The Importance of Residential Interior Design</h3>
                 <p className="text-gray-700">
+                  At Ambiance Interiors, we believe your home should be a true reflection of your lifestyle, values, and personality. Our residential interior design transforms everyday spaces into elegant, functional sanctuaries. From thoughtful layouts and custom furnishings to mood-enhancing colors and textures, we curate environments that nurture comfort and beauty. Whether you're redesigning a single room or an entire residence, our bespoke approach ensures every detail feels personal, timeless, and deeply inviting.
+                </p>
+                <p className="text-gray-700 mt-2">
                   Your home is more than a place—it's a living narrative of who you are. A sanctuary. A memory bank. 
                   A backdrop for life's most meaningful moments. Residential interior design is the art of translating 
                   lifestyle into space; it's where form meets emotion and function aligns with personal expression.
@@ -132,7 +135,8 @@ const ResidentialServices = () => {
                       Design impacts how you feel. Studies continue to show that a well-designed home enhances mental clarity, 
                       emotional balance, and even physical health. Natural light, biophilic elements, air-purifying materials, 
                       and cozy textures all contribute to a home that supports wellness. Our approach emphasizes environments 
-                      that soothe the senses and support your daily rhythms—from stress-free morning routines to restful evenings.
+                      that soothe the senses and support your daily rhythms—from stress-free morning routines to restful evenings. 
+                      These choices not only enhance the look of your home—they make it unforgettable.
                     </p>
                   </li>
                   <li>
