@@ -46,37 +46,37 @@ const MKGoldCoast = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <div className="lg:col-span-2">
               <div className="prose prose-lg max-w-none">
-                <h2>Project Overview</h2>
+                <h2 className="mb-4">Project Overview</h2>
                 
-                <p>
+                <p className="mb-6">
                   The MK Gold Coast project embodies luxury living with a focus on comfort and functionality. 
                   Located in a prestigious neighborhood, this residence was designed for a family who values both 
                   sophistication and practicality. Our clients desired a home that would serve as both a private 
                   sanctuary and an elegant space for entertaining guests.
                 </p>
                 
-                <h2>Design Highlights</h2>
+                <h2 className="mb-4">Design Highlights</h2>
                 
-                <p>
+                <p className="mb-6">
                   We began with a comprehensive layout redesign to optimize flow between spaces while maintaining 
                   distinct zones for various activities. The color palette centers around warm neutrals with gold 
                   accents that add a touch of luxury without overwhelming the senses. Custom cabinetry throughout 
                   the home provides both aesthetic appeal and practical storage solutions.
                 </p>
-                <p>
+                <p className="mb-6">
                   A particular challenge was integrating modern amenities while preserving the classic elegance 
                   the clients desired. This was achieved through thoughtful lighting design that combines statement 
                   fixtures with strategic ambient lighting to create different moods throughout the day.
                 </p>
                 
-                <h2>Visual Style</h2>
+                <h2 className="mb-4">Visual Style</h2>
                 
-                <p>
+                <p className="mb-6">
                   The finished interior strikes a perfect balance between elegance and comfort. Rich textures—from 
                   plush fabrics to natural stone—create visual and tactile interest throughout the space. Each room 
                   flows seamlessly into the next while maintaining its unique character.
                 </p>
-                <p>
+                <p className="mb-6">
                   Personalization was key to this project's success. Family heirlooms and art pieces were 
                   thoughtfully incorporated into the design, ensuring the space felt like home from day one. 
                   The result is a residence that feels both luxurious and lived-in—a true reflection of our 

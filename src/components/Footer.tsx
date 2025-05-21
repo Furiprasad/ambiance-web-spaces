@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -41,7 +42,15 @@ const Footer = () => {
             <h3 className="font-serif text-xl mb-4 text-ambiance-cream">Get in Touch</h3>
             <ul className="space-y-2 text-center md:text-left">
               <li className="text-gray-300">J. Phani Saradhi</li>
-              <li className="text-gray-300">+91 6302783779</li>
+              <li className="text-gray-300">
+                <a 
+                  href="tel:+916302783779" 
+                  className="flex items-center hover:text-ambiance-cream transition-colors"
+                >
+                  <Phone className="h-4 w-4 mr-2" />
+                  +91 6302783779
+                </a>
+              </li>
               <li className="text-gray-300">Sampathphani@gmail.com</li>
             </ul>
             <div className="flex space-x-4 mt-4">

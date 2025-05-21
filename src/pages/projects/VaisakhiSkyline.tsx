@@ -46,9 +46,9 @@ const VaisakhiSkyline = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
             <div className="lg:col-span-2">
               <div className="prose prose-lg max-w-none">
-                <h2>Project Overview</h2>
+                <h2 className="mb-4">Project Overview</h2>
                 
-                <p>
+                <p className="mb-6">
                   Vaisakhi Skyline represents the pinnacle of modern urban living. This high-rise apartment 
                   was transformed into a sleek, contemporary home that maximizes both space and views while 
                   providing all the comforts of luxury living. Our client, a young professional couple, wanted 
@@ -56,29 +56,29 @@ const VaisakhiSkyline = () => {
                   frequent guests.
                 </p>
                 
-                <h2>Design Highlights</h2>
+                <h2 className="mb-4">Design Highlights</h2>
                 
-                <p>
+                <p className="mb-6">
                   The design focuses on innovation and efficiency in every aspect. We reimagined the original 
                   floor plan to create more open, flowing spaces that take advantage of the spectacular city views. 
                   Smart storage solutions were integrated throughout to maintain clean lines while addressing practical needs.
                 </p>
-                <p>
+                <p className="mb-6">
                   A key feature is the custom room dividers that provide separation without blocking light or 
                   views. These architectural elements double as display shelves and storage, demonstrating our 
                   commitment to multifunctional design. The kitchen was completely reconfigured to incorporate 
                   state-of-the-art appliances within a streamlined, elegant aesthetic.
                 </p>
                 
-                <h2>Visual Style</h2>
+                <h2 className="mb-4">Visual Style</h2>
                 
-                <p>
+                <p className="mb-6">
                   The color palette draws inspiration from the sky and cityscape visible through the expansive 
                   windows—soft blues, warm grays, and strategic pops of color create a calm but dynamic atmosphere. 
                   Lighting was carefully designed to transition seamlessly from day to night, with adjustable 
                   options for different moods and activities.
                 </p>
-                <p>
+                <p className="mb-6">
                   Materials were selected not only for their beauty but for their durability and maintenance in 
                   a busy household. High-quality engineered wood flooring, quartz countertops, and performance 
                   fabrics provide both luxury and practicality. The result is a sophisticated urban retreat that 
