@@ -7,7 +7,6 @@ import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const projectImages = [
-  { src: '/lovable-uploads/7f4d99e5-a36b-48ab-ae99-cdbd8a542b97.png', alt: 'Vaisakhi Skyline Featured Image' },
   { src: '/lovable-uploads/908f93c5-7ed4-464f-bdbc-2f4b7a3669e4.png', alt: 'Modern Dining Area' },
   { src: '/lovable-uploads/c9daf214-7278-4018-9e45-972cf84cf624.png', alt: 'Contemporary Living Space' },
   { src: '/lovable-uploads/f58ff517-00ea-47be-8cae-3a3ea2e2f9fa.png', alt: 'Dining Room with Partition' },
@@ -48,6 +47,7 @@ const VaisakhiSkyline = () => {
             <div className="lg:col-span-2">
               <div className="prose prose-lg max-w-none">
                 <h2>Project Overview</h2>
+                
                 <p>
                   Vaisakhi Skyline represents the pinnacle of modern urban living. This high-rise apartment 
                   was transformed into a sleek, contemporary home that maximizes both space and views while 
@@ -57,6 +57,7 @@ const VaisakhiSkyline = () => {
                 </p>
                 
                 <h2>Design Highlights</h2>
+                
                 <p>
                   The design focuses on innovation and efficiency in every aspect. We reimagined the original 
                   floor plan to create more open, flowing spaces that take advantage of the spectacular city views. 
@@ -70,6 +71,7 @@ const VaisakhiSkyline = () => {
                 </p>
                 
                 <h2>Visual Style</h2>
+                
                 <p>
                   The color palette draws inspiration from the sky and cityscape visible through the expansive 
                   windows—soft blues, warm grays, and strategic pops of color create a calm but dynamic atmosphere. 
@@ -96,14 +98,6 @@ const VaisakhiSkyline = () => {
                   <div>
                     <h4 className="text-sm text-gray-500">Location</h4>
                     <p>Vaisakhi Skyline, Hyderabad</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm text-gray-500">Size</h4>
-                    <p>2,800 sq. ft.</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm text-gray-500">Timeline</h4>
-                    <p>5 months</p>
                   </div>
                   <div>
                     <h4 className="text-sm text-gray-500">Services</h4>

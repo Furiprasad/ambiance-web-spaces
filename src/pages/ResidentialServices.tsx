@@ -83,6 +83,7 @@ const ResidentialServices = () => {
             <div className="space-y-6">
               <div>
                 <h3 className="text-2xl font-serif mb-3">The Importance of Residential Interior Design</h3>
+                
                 <p className="text-gray-700">
                   At Ambiance Interiors, we believe your home should be a true reflection of your lifestyle, values, and personality. Our residential interior design transforms everyday spaces into elegant, functional sanctuaries. From thoughtful layouts and custom furnishings to mood-enhancing colors and textures, we curate environments that nurture comfort and beauty. Whether you're redesigning a single room or an entire residence, our bespoke approach ensures every detail feels personal, timeless, and deeply inviting.
                 </p>
@@ -100,9 +101,11 @@ const ResidentialServices = () => {
 
               <div>
                 <h3 className="text-2xl font-serif mb-3">How Interior Design Transforms Spaces:</h3>
+                
                 <ul className="space-y-4">
                   <li>
                     <h4 className="font-medium">Enhances Functionality</h4>
+                    
                     <p className="text-gray-700">
                       In great residential design, every square foot serves a purpose. We craft layouts that eliminate wasted space 
                       and maximize flow—from entryways that feel welcoming to kitchens that invite conversation. Smart design solutions 
@@ -113,6 +116,7 @@ const ResidentialServices = () => {
                   </li>
                   <li>
                     <h4 className="font-medium">Increases Property Value</h4>
+                    
                     <p className="text-gray-700">
                       A beautifully designed home doesn't just appeal emotionally—it performs financially. Strategic interior design can 
                       significantly increase a property's market value and desirability. From premium finishes to custom cabinetry and built-in 
@@ -122,6 +126,7 @@ const ResidentialServices = () => {
                   </li>
                   <li>
                     <h4 className="font-medium">Reflects Your Identity</h4>
+                    
                     <p className="text-gray-700">
                       Your home should tell your story—not a trend. Every material, color, and texture in your space can communicate 
                       something about you—your tastes, values, travels, and inspirations. We believe residential interiors should 
@@ -131,6 +136,7 @@ const ResidentialServices = () => {
                   </li>
                   <li>
                     <h4 className="font-medium">Improves Well-Being</h4>
+                    
                     <p className="text-gray-700">
                       Design impacts how you feel. Studies continue to show that a well-designed home enhances mental clarity, 
                       emotional balance, and even physical health. Natural light, biophilic elements, air-purifying materials, 
@@ -141,6 +147,7 @@ const ResidentialServices = () => {
                   </li>
                   <li>
                     <h4 className="font-medium">Creates Lasting Impressions</h4>
+                    
                     <p className="text-gray-700">
                       Your home is often a reflection of first impressions—on guests, family, and even yourself. Whether you're entertaining 
                       or enjoying solitude, a beautifully curated space elevates every moment. These choices not only enhance the look of 

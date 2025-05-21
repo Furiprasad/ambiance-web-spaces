@@ -88,6 +88,7 @@ const CommercialServices = () => {
             <div className="space-y-6">
               <div>
                 <h3 className="text-2xl font-serif mb-3">The Power of Commercial Interior Design</h3>
+                
                 <p className="text-gray-700">
                   In today's competitive business landscape, a well-designed commercial space is more than an aesthetic 
                   statement—it's a strategic investment in your company's performance and culture. From client-facing areas 
@@ -102,9 +103,11 @@ const CommercialServices = () => {
 
               <div>
                 <h3 className="text-2xl font-serif mb-3">Core Benefits of Strategic Design</h3>
+                
                 <ul className="space-y-4">
                   <li>
                     <h4 className="font-medium">Boosts Productivity</h4>
+                    
                     <p className="text-gray-700">
                       Thoughtful spatial planning eliminates workflow bottlenecks and creates environments that foster focus. 
                       Ergonomic furnishings reduce fatigue and injury. Strategic lighting design—combining natural light with 
@@ -114,6 +117,7 @@ const CommercialServices = () => {
                   </li>
                   <li>
                     <h4 className="font-medium">Strengthens Brand Identity</h4>
+                    
                     <p className="text-gray-700">
                       Your space should be a three-dimensional expression of your brand values and positioning. 
                       From reception areas that make powerful first impressions to conference rooms that reinforce 
@@ -124,6 +128,7 @@ const CommercialServices = () => {
                   </li>
                   <li>
                     <h4 className="font-medium">Fosters Employee Well-being</h4>
+                    
                     <p className="text-gray-700">
                       The modern workplace must support human health and happiness. We incorporate biophilic elements 
                       that connect people with nature, designate quiet zones for concentration, and create community 
@@ -133,6 +138,7 @@ const CommercialServices = () => {
                   </li>
                   <li>
                     <h4 className="font-medium">Enhances Client Experience</h4>
+                    
                     <p className="text-gray-700">
                       First impressions form lasting perceptions. From hospitality and retail to corporate lobbies, 
                       we craft client-facing environments that impress and welcome. Intuitive wayfinding and thoughtful 
@@ -142,6 +148,7 @@ const CommercialServices = () => {
                   </li>
                   <li>
                     <h4 className="font-medium">Scalable & Sustainable Solutions</h4>
+                    
                     <p className="text-gray-700">
                       Forward-thinking commercial design anticipates growth and change. We create adaptable spaces that 
                       can evolve with your business needs, incorporating modular elements and flexible infrastructure. 

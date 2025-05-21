@@ -7,7 +7,6 @@ import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const projectImages = [
-  { src: '/lovable-uploads/a60ba276-0f3e-40d5-97cc-6365f3625026.png', alt: 'MK Gold Coast Living Room' },
   { src: '/lovable-uploads/a5d26f45-7c46-403f-9be7-e0292681dd37.png', alt: 'Luxury Living Room with Gold Accents' },
   { src: '/lovable-uploads/519a9ee0-ddd1-429d-aa12-2b55112859b9.png', alt: 'Elegant Dining Area' },
   { src: '/lovable-uploads/d93e7190-49e4-404e-9fcf-200cf5be89b8.png', alt: 'Modern Bedroom Design' },
@@ -48,6 +47,7 @@ const MKGoldCoast = () => {
             <div className="lg:col-span-2">
               <div className="prose prose-lg max-w-none">
                 <h2>Project Overview</h2>
+                
                 <p>
                   The MK Gold Coast project embodies luxury living with a focus on comfort and functionality. 
                   Located in a prestigious neighborhood, this residence was designed for a family who values both 
@@ -56,6 +56,7 @@ const MKGoldCoast = () => {
                 </p>
                 
                 <h2>Design Highlights</h2>
+                
                 <p>
                   We began with a comprehensive layout redesign to optimize flow between spaces while maintaining 
                   distinct zones for various activities. The color palette centers around warm neutrals with gold 
@@ -69,6 +70,7 @@ const MKGoldCoast = () => {
                 </p>
                 
                 <h2>Visual Style</h2>
+                
                 <p>
                   The finished interior strikes a perfect balance between elegance and comfort. Rich textures—from 
                   plush fabrics to natural stone—create visual and tactile interest throughout the space. Each room 
@@ -94,14 +96,6 @@ const MKGoldCoast = () => {
                   <div>
                     <h4 className="text-sm text-gray-500">Location</h4>
                     <p>Gold Coast, Hyderabad</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm text-gray-500">Size</h4>
-                    <p>3,200 sq. ft.</p>
-                  </div>
-                  <div>
-                    <h4 className="text-sm text-gray-500">Timeline</h4>
-                    <p>6 months</p>
                   </div>
                   <div>
                     <h4 className="text-sm text-gray-500">Services</h4>
