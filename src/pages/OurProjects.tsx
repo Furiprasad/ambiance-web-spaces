@@ -24,20 +24,20 @@ const projects = [
     description: 'Contemporary urban living with sleek modernism and client-centric luxury. Maximizing space efficiency while maintaining an elegant aesthetic through innovative design solutions.'
   },
   {
-    id: 3,
-    title: 'Elegant Dining Space',
-    image: '/lovable-uploads/0a967e4f-b07b-4af1-9c85-adba70f27cdb.png',
-    year: 2020,
-    category: 'Residential',
-    description: 'A sophisticated dining area that blends functionality with style, featuring custom furniture and ambient lighting to create the perfect entertainment space.'
-  },
-  {
-    id: 4,
-    title: 'Luxury Bedroom',
-    image: '/lovable-uploads/269b8e38-b00e-4dff-8258-e15d40a231d9.png',
+    id: 'sunrise-integral',
+    title: 'Sunrise Integral',
+    image: '/lovable-uploads/c14436d4-6892-4890-aa2a-174b91291b72.png',
     year: 2021,
     category: 'Residential',
-    description: 'A serene bedroom sanctuary featuring quality materials, thoughtful storage solutions, and a calming color palette to promote rest and rejuvenation.'
+    description: 'A refined yet relaxed atmosphere blending contemporary living with serene coastal influences. Warm textures and neutral tones create a mindful design that honors natural light and openness.'
+  },
+  {
+    id: 'multicuisine-restaurant',
+    title: 'Multicuisine Restaurant',
+    image: '/lovable-uploads/ae8b6d1d-79fd-4235-868d-7be1d4f2c5ae.png',
+    year: 2023,
+    category: 'Commercial',
+    description: 'A sophisticated dining environment that reimagines hospitality interiors with a focus on mood, materiality, and movement, creating an immersive experience that elevates diverse cuisines.'
   }
 ];
 

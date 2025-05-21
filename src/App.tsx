@@ -13,6 +13,8 @@ import CommercialServices from "./pages/CommercialServices";
 import OurProjects from "./pages/OurProjects";
 import MKGoldCoast from "./pages/projects/MKGoldCoast";
 import VaisakhiSkyline from "./pages/projects/VaisakhiSkyline";
+import SunriseIntegral from "./pages/projects/SunriseIntegral";
+import MulticuisineRestaurant from "./pages/projects/MulticuisineRestaurant";
 import ContactUs from "./pages/ContactUs";
 import NotFound from "./pages/NotFound";
 
@@ -33,6 +35,8 @@ const App = () => (
           <Route path="/our-projects" element={<OurProjects />} />
           <Route path="/our-projects/mk-gold-coast" element={<MKGoldCoast />} />
           <Route path="/our-projects/vaisakhi-skyline" element={<VaisakhiSkyline />} />
+          <Route path="/our-projects/sunrise-integral" element={<SunriseIntegral />} />
+          <Route path="/our-projects/multicuisine-restaurant" element={<MulticuisineRestaurant />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -17,16 +17,16 @@ const projects = [
     category: 'Residential'
   },
   {
-    id: 3,
-    title: 'Elegant Dining Space',
-    image: '/lovable-uploads/0a967e4f-b07b-4af1-9c85-adba70f27cdb.png',
+    id: 'sunrise-integral',
+    title: 'Sunrise Integral',
+    image: '/lovable-uploads/c14436d4-6892-4890-aa2a-174b91291b72.png',
     category: 'Residential'
   },
   {
-    id: 4,
-    title: 'Luxury Bedroom',
-    image: '/lovable-uploads/269b8e38-b00e-4dff-8258-e15d40a231d9.png',
-    category: 'Residential'
+    id: 'multicuisine-restaurant',
+    title: 'Multicuisine Restaurant',
+    image: '/lovable-uploads/ae8b6d1d-79fd-4235-868d-7be1d4f2c5ae.png',
+    category: 'Commercial'
   }
 ];
 
