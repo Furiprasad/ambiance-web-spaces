@@ -36,7 +36,7 @@ const SunriseIntegral = () => {
           <div className="mb-12">
             <div className="aspect-video w-full overflow-hidden rounded-lg mb-8">
               <img 
-                src="/lovable-uploads/c14436d4-6892-4890-aa2a-174b91291b72.png" 
+                src="/lovable-uploads/c40b6810-9ba0-470b-9f74-1eaaf0f8cbe1.png" 
                 alt="Sunrise Integral Featured Image" 
                 className="w-full h-full object-cover"
               />

@@ -19,7 +19,7 @@ const projects = [
   {
     id: 'sunrise-integral',
     title: 'Sunrise Integral',
-    image: '/lovable-uploads/c14436d4-6892-4890-aa2a-174b91291b72.png',
+    image: '/lovable-uploads/c40b6810-9ba0-470b-9f74-1eaaf0f8cbe1.png',
     category: 'Residential'
   },
   {
