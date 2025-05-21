@@ -11,7 +11,8 @@ const projectImages = [
   { src: '/lovable-uploads/42210509-8385-4ee9-be8f-a8c21106dee9.png', alt: 'Contemporary Living Room Design' },
   { src: '/lovable-uploads/7a232483-6054-4081-8ba0-5f7c54064f4c.png', alt: 'Elegant Kitchen with Marble Backsplash' },
   { src: '/lovable-uploads/618a5cb5-be45-45a3-a157-175129237c77.png', alt: 'Dining Area with Display Units' },
-  { src: '/lovable-uploads/8d38db86-72c1-488f-82a0-9bd6691fefc8.png', alt: 'Children\'s Bedroom with Nautical Theme' }
+  { src: '/lovable-uploads/8d38db86-72c1-488f-82a0-9bd6691fefc8.png', alt: 'Children\'s Bedroom with Nautical Theme' },
+  { src: '/lovable-uploads/4b2f8690-b717-4fb7-817f-06c8efa3d561.png', alt: 'Modern Kitchen with Marble Backsplash and Dining Area' }
 ];
 
 const SunriseIntegral = () => {

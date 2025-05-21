@@ -11,7 +11,8 @@ const projectImages = [
   { src: '/lovable-uploads/c9daf214-7278-4018-9e45-972cf84cf624.png', alt: 'Contemporary Living Space' },
   { src: '/lovable-uploads/f58ff517-00ea-47be-8cae-3a3ea2e2f9fa.png', alt: 'Dining Room with Partition' },
   { src: '/lovable-uploads/2575f930-7f5d-4720-8a45-f82dba0e3146.png', alt: 'Elegant Bedroom Design' },
-  { src: '/lovable-uploads/86fc86bc-8242-463e-891e-690d6b16d00d.png', alt: 'Modern Kitchen' }
+  { src: '/lovable-uploads/86fc86bc-8242-463e-891e-690d6b16d00d.png', alt: 'Modern Kitchen' },
+  { src: '/lovable-uploads/15e218ef-11d2-4b2a-a6a0-67ecf1b30ef0.png', alt: 'Dining Area with Living Space' }
 ];
 
 const VaisakhiSkyline = () => {

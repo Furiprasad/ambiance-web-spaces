@@ -11,7 +11,8 @@ const projectImages = [
   { src: '/lovable-uploads/519a9ee0-ddd1-429d-aa12-2b55112859b9.png', alt: 'Elegant Dining Area' },
   { src: '/lovable-uploads/d93e7190-49e4-404e-9fcf-200cf5be89b8.png', alt: 'Modern Bedroom Design' },
   { src: '/lovable-uploads/10f7851b-1281-4f61-a3c2-1bf1c47d13a7.png', alt: 'Bedroom with Custom Wardrobe' },
-  { src: '/lovable-uploads/cc3f2ee8-ff20-448e-ab8e-3de5da4cd5a7.png', alt: 'Contemporary Kitchen Design' }
+  { src: '/lovable-uploads/cc3f2ee8-ff20-448e-ab8e-3de5da4cd5a7.png', alt: 'Contemporary Kitchen Design' },
+  { src: '/lovable-uploads/7ac9e1bd-9426-4b20-abf7-3e681c3b1e6a.png', alt: 'Modern Dining Space with Gold Accents' }
 ];
 
 const MKGoldCoast = () => {

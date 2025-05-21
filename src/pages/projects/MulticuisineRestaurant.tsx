@@ -11,7 +11,8 @@ const projectImages = [
   { src: '/lovable-uploads/324263d1-479d-476d-a53f-c0b40d25a849.png', alt: 'Elegant Dining Area with Mirrors' },
   { src: '/lovable-uploads/9465bc52-34a7-43dc-a05b-c3670fff133f.png', alt: 'Small Dining Room With Round Mirrors' },
   { src: '/lovable-uploads/9fe28f31-d85d-4b23-ad4d-3069e95342d7.png', alt: 'Dining Area with Gold Pendant Lights' },
-  { src: '/lovable-uploads/12b119b2-e567-4d55-8074-98d7e2b47328.png', alt: 'Entrance Hallway with Artwork' }
+  { src: '/lovable-uploads/12b119b2-e567-4d55-8074-98d7e2b47328.png', alt: 'Entrance Hallway with Artwork' },
+  { src: '/lovable-uploads/55e3ccef-b5d0-4a95-87dc-30a0f41101be.png', alt: 'Restaurant Interior with Gold Pendant Lights and Green Seating' }
 ];
 
 const MulticuisineRestaurant = () => {
