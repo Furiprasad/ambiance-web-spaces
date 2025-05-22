@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <h3 className="font-serif text-xl mb-4 text-ambiance-cream">Quick Links</h3>
             <ul className="space-y-2 text-center md:text-left">
-              {['Home', 'About', 'Services', 'Our Projects', 'Contact'].map((link) => (
+              {['Home', 'About', 'Services', 'Our Projects', 'Contact Us'].map((link) => (
                 <li key={link}>
                   <Link 
                     to={link === 'Home' ? '/' : `/${link.toLowerCase().replace(/\s+/g, '-')}`}
