@@ -70,9 +70,19 @@ const HeroSlider = () => {
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-center mb-6 max-w-4xl font-medium">
                 {slide.subtitle}
               </h1>
-              <Link to="/our-projects" className="btn-primary mt-4">
-                Explore Our Work
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                <Link to="/our-projects" className="btn-primary">
+                  Explore Our Work
+                </Link>
+                <a 
+                  href="https://wa.me/916302783779" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-[#25D366] hover:bg-[#20B858] text-white px-6 py-3 rounded transition-all duration-300 flex items-center justify-center"
+                >
+                  Chat with Us
+                </a>
+              </div>
             </div>
           </div>
         </div>
